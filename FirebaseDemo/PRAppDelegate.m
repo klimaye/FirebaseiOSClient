@@ -7,6 +7,7 @@
 //
 
 #import "PRAppDelegate.h"
+#import "PRChatViewController.h"
 
 @implementation PRAppDelegate
 
@@ -14,6 +15,8 @@
 {
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     // Override point for customization after application launch.
+    PRChatViewController *chatVC = [[PRChatViewController alloc] init];
+    [self.window setRootViewController:chatVC];
     self.window.backgroundColor = [UIColor whiteColor];
     [self.window makeKeyAndVisible];
     return YES;

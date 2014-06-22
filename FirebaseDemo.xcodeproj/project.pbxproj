@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4250C73EECE84FDD95ADD818 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4983C217F2804DD0A2D038B5 /* libPods.a */; };
 		7C9E258719563332005AA346 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7C9E258619563332005AA346 /* Foundation.framework */; };
 		7C9E258919563332005AA346 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7C9E258819563332005AA346 /* CoreGraphics.framework */; };
 		7C9E258B19563332005AA346 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7C9E258A19563332005AA346 /* UIKit.framework */; };
@@ -19,6 +20,10 @@
 		7C9E25A219563332005AA346 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7C9E258A19563332005AA346 /* UIKit.framework */; };
 		7C9E25AA19563332005AA346 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 7C9E25A819563332005AA346 /* InfoPlist.strings */; };
 		7C9E25AC19563332005AA346 /* FirebaseDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 7C9E25AB19563332005AA346 /* FirebaseDemoTests.m */; };
+		7C9E25B819564497005AA346 /* PRChatViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7C9E25B619564497005AA346 /* PRChatViewController.m */; };
+		7C9E25B919564497005AA346 /* PRChatViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7C9E25B719564497005AA346 /* PRChatViewController.xib */; };
+		7C9E25BB1956461C005AA346 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7C9E25BA1956461C005AA346 /* SystemConfiguration.framework */; };
+		7C9E25BE19568585005AA346 /* Message.m in Sources */ = {isa = PBXBuildFile; fileRef = 7C9E25BD19568585005AA346 /* Message.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -32,6 +37,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		4983C217F2804DD0A2D038B5 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		7C9E258319563332005AA346 /* FirebaseDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FirebaseDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7C9E258619563332005AA346 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		7C9E258819563332005AA346 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -48,6 +54,13 @@
 		7C9E25A719563332005AA346 /* FirebaseDemoTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "FirebaseDemoTests-Info.plist"; sourceTree = "<group>"; };
 		7C9E25A919563332005AA346 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		7C9E25AB19563332005AA346 /* FirebaseDemoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FirebaseDemoTests.m; sourceTree = "<group>"; };
+		7C9E25B519564497005AA346 /* PRChatViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PRChatViewController.h; sourceTree = "<group>"; };
+		7C9E25B619564497005AA346 /* PRChatViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PRChatViewController.m; sourceTree = "<group>"; };
+		7C9E25B719564497005AA346 /* PRChatViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PRChatViewController.xib; sourceTree = "<group>"; };
+		7C9E25BA1956461C005AA346 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		7C9E25BC19568585005AA346 /* Message.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Message.h; sourceTree = "<group>"; };
+		7C9E25BD19568585005AA346 /* Message.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Message.m; sourceTree = "<group>"; };
+		808A0C03AEAA413784A70840 /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,9 +68,11 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7C9E25BB1956461C005AA346 /* SystemConfiguration.framework in Frameworks */,
 				7C9E258919563332005AA346 /* CoreGraphics.framework in Frameworks */,
 				7C9E258B19563332005AA346 /* UIKit.framework in Frameworks */,
 				7C9E258719563332005AA346 /* Foundation.framework in Frameworks */,
+				4250C73EECE84FDD95ADD818 /* libPods.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -81,6 +96,7 @@
 				7C9E25A519563332005AA346 /* FirebaseDemoTests */,
 				7C9E258519563332005AA346 /* Frameworks */,
 				7C9E258419563332005AA346 /* Products */,
+				808A0C03AEAA413784A70840 /* Pods.xcconfig */,
 			);
 			sourceTree = "<group>";
 		};
@@ -96,10 +112,12 @@
 		7C9E258519563332005AA346 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				7C9E25BA1956461C005AA346 /* SystemConfiguration.framework */,
 				7C9E258619563332005AA346 /* Foundation.framework */,
 				7C9E258819563332005AA346 /* CoreGraphics.framework */,
 				7C9E258A19563332005AA346 /* UIKit.framework */,
 				7C9E259F19563332005AA346 /* XCTest.framework */,
+				4983C217F2804DD0A2D038B5 /* libPods.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -111,6 +129,11 @@
 				7C9E259619563332005AA346 /* PRAppDelegate.m */,
 				7C9E259819563332005AA346 /* Images.xcassets */,
 				7C9E258D19563332005AA346 /* Supporting Files */,
+				7C9E25B519564497005AA346 /* PRChatViewController.h */,
+				7C9E25B619564497005AA346 /* PRChatViewController.m */,
+				7C9E25B719564497005AA346 /* PRChatViewController.xib */,
+				7C9E25BC19568585005AA346 /* Message.h */,
+				7C9E25BD19568585005AA346 /* Message.m */,
 			);
 			path = FirebaseDemo;
 			sourceTree = "<group>";
@@ -151,9 +174,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 7C9E25AF19563332005AA346 /* Build configuration list for PBXNativeTarget "FirebaseDemo" */;
 			buildPhases = (
+				A326AD96B74D4B99B2C7902E /* Check Pods Manifest.lock */,
 				7C9E257F19563332005AA346 /* Sources */,
 				7C9E258019563332005AA346 /* Frameworks */,
 				7C9E258119563332005AA346 /* Resources */,
+				AA1F4B2EABE444489CCFFF60 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -220,6 +245,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7C9E25B919564497005AA346 /* PRChatViewController.xib in Resources */,
 				7C9E259119563332005AA346 /* InfoPlist.strings in Resources */,
 				7C9E259919563332005AA346 /* Images.xcassets in Resources */,
 			);
@@ -235,13 +261,48 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		A326AD96B74D4B99B2C7902E /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		AA1F4B2EABE444489CCFFF60 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		7C9E257F19563332005AA346 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				7C9E259719563332005AA346 /* PRAppDelegate.m in Sources */,
+				7C9E25BE19568585005AA346 /* Message.m in Sources */,
 				7C9E259319563332005AA346 /* main.m in Sources */,
+				7C9E25B819564497005AA346 /* PRChatViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -355,12 +416,14 @@
 		};
 		7C9E25B019563332005AA346 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 808A0C03AEAA413784A70840 /* Pods.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "FirebaseDemo/FirebaseDemo-Prefix.pch";
 				INFOPLIST_FILE = "FirebaseDemo/FirebaseDemo-Info.plist";
+				ONLY_ACTIVE_ARCH = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -368,12 +431,14 @@
 		};
 		7C9E25B119563332005AA346 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 808A0C03AEAA413784A70840 /* Pods.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "FirebaseDemo/FirebaseDemo-Prefix.pch";
 				INFOPLIST_FILE = "FirebaseDemo/FirebaseDemo-Info.plist";
+				ONLY_ACTIVE_ARCH = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -438,6 +503,7 @@
 				7C9E25B119563332005AA346 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		7C9E25B219563332005AA346 /* Build configuration list for PBXNativeTarget "FirebaseDemoTests" */ = {
 			isa = XCConfigurationList;
@@ -446,6 +512,7 @@
 				7C9E25B419563332005AA346 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

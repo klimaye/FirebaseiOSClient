@@ -1,0 +1,24 @@
+# Code
+*.swp
+*~.nib
+
+build/
+*.orig
+*.pbxuser
+*.perspective
+
+# Mac OS X
+*.DS_Store
+
+# Xcode
+*.pbxuser
+*.mode1v3
+*.mode2v3
+*.perspectivev3
+*.xcuserstate
+project.xcworkspace/
+xcuserdata/
+# pods
+Podfile.lock
+Pods/
+PocketRx.xcworkspace/
